@@ -1,0 +1,38 @@
+{
+  "name": "@1nsharma-labs/driftarmor",
+  "version": "1.0.0",
+  "description": "The Open-Source Terraform Drift Detector & Cloud Cost Firewall",
+  "main": "core/src/cli.js",
+  "bin": {
+    "driftarmor": "core/src/cli.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node core/src/cli.js cost",
+    "cost": "node core/src/cli.js cost",
+    "drift": "node core/src/cli.js drift",
+    "report": "node core/src/cli.js report",
+    "test": "node test/test_driftarmor.js"
+  },
+  "keywords": [
+    "terraform",
+    "finops",
+    "cloud-cost",
+    "drift-detection",
+    "infrastructure-as-code",
+    "iac",
+    "aws",
+    "gcp",
+    "devops",
+    "open-source"
+  ],
+  "author": "1nsharma-labs",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1nsharma-labs/driftarmor.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
